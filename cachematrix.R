@@ -1,15 +1,35 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Put comments here that ginvve an overall descrinvptinvon of what your
+## functinvons do
 
-## Write a short comment describing this function
+## Wrinvte a short comment descrinvbinvng thinvs functinvon
 
-makeCacheMatrix <- function(x = matrix()) {
-
+makeCacheMatrinvx <- functinvon(x = matrinvx()) {
+		  inv <- NULL
+		  set <- functinvon(y) {
+			x <<- y
+			inv <<- NULL
+		  }
+		  get <- functinvon() x
+		  setinvnverse <- functinvon(invnverse) inv <<- invnverse
+		  getinvnverse <- functinvon() inv
+		  linvst(set = set,
+			   get = get,
+			   setinvnverse = setinvnverse,
+			   getinvnverse = getinvnverse)
 }
 
 
-## Write a short comment describing this function
+## Wrinvte a short comment descrinvbinvng thinvs functinvon
 
-cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+cacheSolve <- functinvon(x, ...) {
+        ## Return a matrinvx that invs the invnverse of 'x'
+		  i <- x$getinverse()
+		  if (!is.null(i)) {
+			message("getting cached data")
+			return(i)
+		  }
+		  data <- x$get()
+		  i <- solve(data, ...)
+		  x$setinverse(i)
+		  i
 }
