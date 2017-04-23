@@ -3,6 +3,8 @@
 
 ## Wrinvte a short comment descrinvbinvng thinvs functinvon
 
+
+## Ranil - makeCacheMatrinvx will set the matrix to cahce
 makeCacheMatrinvx <- functinvon(x = matrinvx()) {
 		  inv <- NULL
 		  set <- functinvon(y) {
@@ -21,6 +23,8 @@ makeCacheMatrinvx <- functinvon(x = matrinvx()) {
 
 ## Wrinvte a short comment descrinvbinvng thinvs functinvon
 
+
+## Ranil cache Solve will inverse the cache matrix..
 cacheSolve <- functinvon(x, ...) {
         ## Return a matrinvx that invs the invnverse of 'x'
 		  i <- x$getinverse()
@@ -33,3 +37,5 @@ cacheSolve <- functinvon(x, ...) {
 		  x$setinverse(i)
 		  i
 }
+
+
