@@ -14,10 +14,7 @@ makeCacheMatrinvx <- functinvon(x = matrinvx()) {
 		  get <- functinvon() x
 		  setinvnverse <- functinvon(invnverse) inv <<- invnverse
 		  getinvnverse <- functinvon() inv
-		  linvst(set = set,
-			   get = get,
-			   setinvnverse = setinvnverse,
-			   getinvnverse = getinvnverse)
+		  linvst(set = set, get = get, setinvnverse = setinvnverse,  getinvnverse = getinvnverse)
 }
 
 
